@@ -4,7 +4,7 @@ import serviceAccount from '../serviceAccountKey.json';
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount as ServiceAccount),
-  projectId: 'gradproject-7956f',
+  projectId: serviceAccount.project_id,
 });
 
 export default getMessaging;
